@@ -5,8 +5,9 @@ import 'package:myportofolio_mobile/screens/project_form.dart';
 class ItemHomepage {
   final String name;
   final IconData icon;
+  final Color? color;
 
-  ItemHomepage(this.name, this.icon);
+  ItemHomepage(this.name, this.icon, [this.color]);
 }
 
 class ItemCard extends StatelessWidget {
@@ -17,7 +18,7 @@ class ItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Theme.of(context).colorScheme.secondary,
+      color: item.color ?? Theme.of(context).colorScheme.secondary,
       borderRadius: BorderRadius.circular(12),
       child: InkWell(
         onTap: () {

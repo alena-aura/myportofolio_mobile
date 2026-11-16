@@ -10,10 +10,10 @@ class MyHomePage extends StatelessWidget {
   final String kelas = "PBP C";
 
   final List<ItemHomepage> items = [
-    ItemHomepage("Lihat Proyek", Icons.folder),
-    ItemHomepage("Tambah Proyek", Icons.add_circle),
-    ItemHomepage("Tambah Pengalaman", Icons.work_outline),
-    ItemHomepage("Logout", Icons.logout),
+    ItemHomepage("Lihat Proyek", Icons.folder, Colors.blue.shade700),
+    ItemHomepage("Tambah Proyek", Icons.add_circle, Colors.indigo.shade700),
+    ItemHomepage("Tambah Pengalaman", Icons.work_outline, Colors.teal.shade700),
+    ItemHomepage("Logout", Icons.logout, Colors.red.shade700),
   ];
 
   @override
